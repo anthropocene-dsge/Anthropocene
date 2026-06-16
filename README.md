@@ -1,2 +1,2 @@
 # Anthropocene
-un repositorio jaja un salu2
+hola, estamos trabajando en él
