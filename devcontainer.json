@@ -1,0 +1,19 @@
+{
+  "name": "Python Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm", 
+  "features": {},  
+  "postCreateCommand": "/bin/sh -c 'sudo rm -f /etc/apt/sources.list.d/yarn.list && sudo apt-get update && sudo apt-get install -y graphviz && pip install --upgrade pip && pip install -r requirements.txt'",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestArgs": ["tests"]
+      },
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
