@@ -1,0 +1,8 @@
+Como servicio de inventario
+Quiero ofrecer una lista de los objetos recolectados por el usuario
+Para que disponga de ellos cuando el usuario los necesite
+
+Criterios de aceptación:
+
+Si el cliente de la aplicación solicita el inventario se debe retornar la lista completa con los objetos que el usuario posee actualmente.
+Si el usuario intenta consumir o equipar un objeto se debe permitir el acceso inmediato a los datos de la lista para validar su disponibilidad.
