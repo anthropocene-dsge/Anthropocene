@@ -1,0 +1,8 @@
+Como jugador
+Quiero ver una lista con mis partidas guardadas antes de iniciar el juego
+Para poder elegir cuál quiero continuar o decidir si creo una nueva
+
+Criterios de aceptación:
+
+Si el jugador entra al menú se debe mostrar una lista con las partidas existentes y un botón de "Nueva Partida".
+Si el jugador selecciona una partida guardada se debe mostrar su información (fecha, hora y tiempo jugado) junto al botón de "Cargar".
