@@ -1,1 +1,8 @@
-devcontainer.json
+# Godot 4+ specific ignores
+.godot/
+export_presets.cfg
+*.translation
+
+# OS specific
+.DS_Store
+Thumbs.db
