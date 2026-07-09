@@ -11,11 +11,14 @@ config_version=5
 [application]
 
 config/name="Anthropocene"
+run/main_scene="uid://xmsbkicp56gk"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=1408
+window/size/viewport_height=768
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

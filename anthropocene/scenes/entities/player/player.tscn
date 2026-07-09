@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://bes87k6aws4u8" path="res://icon.svg" id="1_1hmtu"]
 [ext_resource type="Script" uid="uid://rhx2ef75tv0r" path="res://scenes/entities/player/player.gd" id="1_635qg"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_1eil7"]
+radius = 70.724815
+
 [node name="Player" type="CharacterBody2D" unique_id=1355760735]
 script = ExtResource("1_635qg")
 
@@ -10,3 +13,4 @@ script = ExtResource("1_635qg")
 texture = ExtResource("1_1hmtu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=801409564]
+shape = SubResource("CircleShape2D_1eil7")
