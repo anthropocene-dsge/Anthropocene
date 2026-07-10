@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Anthropocene"
-run/main_scene="uid://xmsbkicp56gk"
+run/main_scene="uid://q5mpmjafmto4"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ItemDatabase="*uid://ohuhuuhk7hh4"
 
 [display]
 
