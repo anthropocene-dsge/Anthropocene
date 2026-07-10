@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c84fewjjk12mx"]
+
+[ext_resource type="Texture2D" uid="uid://behnw3atnf3d2" path="res://assets/ui/pngtree-dry-tree-2d-vector-png-image_18676736.png" id="1_y8u5h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0aldf"]
+size = Vector2(33, 125)
+
+[node name="Arbol" type="StaticBody2D" unique_id=430626067]
+position = Vector2(756, 454)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1652132142]
+position = Vector2(53, 445)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_y8u5h")
+offset = Vector2(-353.33307, -2966.6665)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=762307240]
+position = Vector2(3.5, 119.5)
+shape = SubResource("RectangleShape2D_0aldf")
