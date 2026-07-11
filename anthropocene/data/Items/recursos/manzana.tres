@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cyrf86wytxqtk"]
 
 [ext_resource type="Script" uid="uid://cayetdds76dc4" path="res://data/Items/item_data.gd" id="1_e7rpk"]
+[ext_resource type="Texture2D" uid="uid://m84ao5g33qbk" path="res://assets/manzana.png" id="1_fuk6r"]
 
 [resource]
 script = ExtResource("1_e7rpk")
 id = "manzana03"
 nombre = "Manzana"
 descripcion = "Este es el último alimento que encontrarás en este lugar... después de esto, toca aprender a hacer fotosíntesis."
+icono = ExtResource("1_fuk6r")
 valor_oro = 10
 max_acumulacion = 15
 metadata/_custom_type_script = "uid://cayetdds76dc4"
