@@ -1,7 +1,10 @@
 extends Control
 
-# Apunta al nodo WebView
 @onready var web_view = $WebView 
 
 func _ready() -> void:
-	print("[GODOT] WebView inicializado apuntando a Vite: ", web_view.url)
+	var ruta_absoluta = ProjectSettings.globalize_path("res://ui_bundle/index.html")
+	
+	# Le indicamos al WebView que abra el archivo local
+	web_view.url = "file://" + ruta_absoluta
+	print("[GODOT] Cargando interfaz desde: ", web_view.url)
