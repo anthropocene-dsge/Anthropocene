@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1783798425
+::res://::1783805007
 global.gd::GDScript::8034497853096284120::1783792626::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::2706396237137135981::1783356168::1783356433::1::::<><><>0<>0<>2ca427752dbcd160a3432eb85d822fb9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1783793431
@@ -178,7 +178,7 @@ tema_inventario.tres::Theme::1596655810760656161::1783792626::0::1::::<><><>0<>0
 engranaje.tres::Resource/ItemData::2929395092626411124::1783792626::0::1::::<><><>0<>0<><>::uid://cayetdds76dc4::::res://data/Items/item_data.gd
 manzana.tres::Resource/ItemData::6492832216007004728::1783792626::0::1::::<><><>0<>0<><>::uid://cayetdds76dc4::::res://data/Items/item_data.gd<>uid://m84ao5g33qbk::::res://assets/manzana.png
 palo.tres::Resource/ItemData::7638571337895437489::1783792626::0::1::::<><><>0<>0<><>::uid://cayetdds76dc4::::res://data/Items/item_data.gd
-::res://scenes/::1783796962
+::res://scenes/::1783803697
 ::res://scenes/entities/::1783647859
 ::res://scenes/entities/Estructuras/::1783792917
 arbol.gd::GDScript::7238292380611650058::1783792626::0::1::::<>Area2D<><>0<>0<><>::
@@ -198,9 +198,14 @@ zona_antena.tscn::PackedScene::4734182201345371462::1783792917::0::1::::<><><>0<
 zona_base.tscn::PackedScene::3164147607812335214::1783792917::0::1::::<><><>0<>0<><>::uid://bes87k6aws4u8::::res://icon.svg<>uid://dxgv251o0l22p::::res://assets/fondos/casacada.png<>uid://bk723g28cnuh8::::res://scenes/entities/player/player.tscn<>uid://c84fewjjk12mx::::res://scenes/entities/Estructuras/arbol.tscn<>uid://c445dc5anb0g::::res://scenes/level/zona_transicion.tscn
 zona_transicion.tscn::PackedScene::202059170774407556::1783792917::0::1::::<><><>0<>0<><>::uid://bypcwgnabeta6::::res://scenes/level/portal_transicion.gd
 zona_turbina.tscn::PackedScene::1096319173890391102::1783792917::0::1::::<><><>0<>0<><>::uid://bes87k6aws4u8::::res://icon.svg<>uid://bk723g28cnuh8::::res://scenes/entities/player/player.tscn<>uid://d2pgyw4acwo0g::::res://assets/fondos/camino.png<>uid://c445dc5anb0g::::res://scenes/level/zona_transicion.tscn
-::res://scenes/ui/::1783798320
+::res://scenes/ui/::1783803697
 ui_react.gd::GDScript::3149992781874978218::1783798320::0::1::::<>Control<><>0<>0<><>::
 UI_React.tscn::PackedScene::6200658058521116526::1783798219::0::1::::<><><>0<>0<><>::uid://bk446ks7350tq::::res://scenes/ui/ui_react.gd
 ::res://scenes/ui/hud/::1783356173
 ::res://scenes/ui/intro/::1783394985
-::res://scenes/ui/login/::1783664652
+::res://ui_bundle/::1783804978
+favicon.svg::CompressedTexture2D::3572561286545927511::1783803137::1783805008::1::::<><><>0<>0<>37258fcaf43cc5b534946e6d432ed40c<>res://.godot/imported/favicon.svg-e05761f8c41e4517e5663e690a52aaf6.ctex::
+icons.svg::CompressedTexture2D::7292689630413683454::1783803137::1783805008::1::::<><><>0<>0<>32895a1cd95cbda82a5993a893ec0dcc<>res://.godot/imported/icons.svg-b75664c910b1df6327464d29dd505523.ctex::
+::res://ui_bundle/assets/::1783804974
+camino.png::CompressedTexture2D::965817452633615248::1783803137::1783805008::1::::<><><>0<>0<>c30b970fe2016f2ccd3352304bd674a9<>res://.godot/imported/camino.png-07499a7033ee9c440268df194a7d055d.ctex::
+casacada.png::CompressedTexture2D::2606968058741909463::1783803137::1783805008::1::::<><><>0<>0<>8b768ba3ac2de2e0f09cab35b363f146<>res://.godot/imported/casacada.png-0ace25147a6affa488504d64e2986529.ctex::
