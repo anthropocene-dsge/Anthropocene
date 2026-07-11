@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://culv6xy8gsg3o"]
+
+[ext_resource type="Script" uid="uid://bk446ks7350tq" path="res://scenes/ui/ui_react.gd" id="1_xlsbk"]
+
+[node name="UiReact" type="Control" unique_id=164174933]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xlsbk")
+metadata/_edit_use_anchors_ = true
+
+[node name="WebView" type="WebView" parent="." unique_id=1352669980]
+url = "http://localhost:5173/"
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
