@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c445dc5anb0g"]
+
+[ext_resource type="Script" uid="uid://bypcwgnabeta6" path="res://scenes/level/portal_transicion.gd" id="1_jsor2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ntylx"]
+size = Vector2(75, 772)
+
+[node name="PortalTransicion" type="Area2D" unique_id=1711492377]
+script = ExtResource("1_jsor2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=186695175]
+position = Vector2(-31.5, 384)
+shape = SubResource("RectangleShape2D_ntylx")

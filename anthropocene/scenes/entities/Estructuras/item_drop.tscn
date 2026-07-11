@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dqlv038nejsws"]
+
+[ext_resource type="Script" uid="uid://duj2oh3tvc3on" path="res://scenes/entities/Estructuras/item_drop.gd" id="1_kovx1"]
+[ext_resource type="Texture2D" uid="uid://m84ao5g33qbk" path="res://assets/manzana.png" id="2_kxgx2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ntylx"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kxgx2"]
+radius = 11.401754
+
+[node name="ItemDrop" type="CharacterBody2D" unique_id=1486762720]
+collision_layer = 0
+script = ExtResource("1_kovx1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=965172835]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_ntylx")
+
+[node name="ZonaRecoleccion" type="Area2D" parent="." unique_id=852522259]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaRecoleccion" unique_id=1579093788]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_kxgx2")
+
+[node name="Sprite2D" type="Sprite2D" parent="ZonaRecoleccion" unique_id=2126473882]
+scale = Vector2(0.010761113, 0.010088885)
+texture = ExtResource("2_kxgx2")
