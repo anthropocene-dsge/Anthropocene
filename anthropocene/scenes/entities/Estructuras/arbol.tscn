@@ -23,3 +23,7 @@ texture = ExtResource("3_6c73j")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=762307240]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_0aldf")
+
+[node name="TimerDrop" type="Timer" parent="." unique_id=1183757200]
+
+[node name="TimerBoost" type="Timer" parent="." unique_id=1193012822]
