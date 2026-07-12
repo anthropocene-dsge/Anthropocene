@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bh0ayd23hoeu3"]
+
+[ext_resource type="Texture2D" uid="uid://beu76s8nbyv3q" path="res://assets/extras/engranaje.png" id="1_8bnbq"]
+[ext_resource type="Script" uid="uid://cayetdds76dc4" path="res://data/Items/item_data.gd" id="1_ty45f"]
+
+[resource]
+script = ExtResource("1_ty45f")
+id = "engranaje02"
+nombre = "Engranaje"
+descripcion = "Un componente mecánico oxidado. Podría ser útil para reparar maquinaria más adelante."
+icono = ExtResource("1_8bnbq")
+tipo = 2
+valor_oro = 5
+max_acumulacion = 30
+metadata/_custom_type_script = "uid://cayetdds76dc4"
