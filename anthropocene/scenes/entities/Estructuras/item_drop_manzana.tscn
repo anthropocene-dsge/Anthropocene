@@ -1,18 +1,21 @@
-[gd_scene format=3 uid="uid://dqlv038nejsws"]
+[gd_scene format=3 uid="uid://djyn5jbe1mpgp"]
 
-[ext_resource type="Script" uid="uid://duj2oh3tvc3on" path="res://scenes/entities/Estructuras/item_drop.gd" id="1_kovx1"]
+[ext_resource type="Script" uid="uid://duj2oh3tvc3on" path="res://scenes/entities/Estructuras/item_drop.gd" id="1_fybig"]
+[ext_resource type="Texture2D" uid="uid://m84ao5g33qbk" path="res://assets/extras/manzana.png" id="2_3iim5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ntylx"]
-radius = 9.0
+radius = 15.132746
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kxgx2"]
-radius = 11.401754
+radius = 18.0
 
 [node name="ItemDrop" type="CharacterBody2D" unique_id=1486762720]
 collision_layer = 0
-script = ExtResource("1_kovx1")
+script = ExtResource("1_fybig")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=959410096]
+scale = Vector2(0.017375002, 0.015949998)
+texture = ExtResource("2_3iim5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=965172835]
 position = Vector2(0, 2)
