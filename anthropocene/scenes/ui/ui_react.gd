@@ -92,9 +92,9 @@ func _process_new_game() -> void:
 	
 	# Construimos la base de datos de inicio para el colono
 	var nuevos_datos = {
-		"location": "SECTOR ALFA - BUNKER DE ATERRIZAJE",
+		"location": "SECTOR 00 - El COMIENZO... de nuevo.",
 		"date": Time.get_date_string_from_system(),
-		"time": "00:00",
+		"time": Time.get_time_string_from_system().substr(0, 5),
 		"playtime": "0h 0m",
 		"progress": 0
 	}
