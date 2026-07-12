@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cw6wsqpanrves"
+=======
+uid="uid://dndec7f7mjrec"
+>>>>>>> 45ead31 (Actualizacion de inventario y nuevo item abono)
 path="res://.godot/imported/abono.png-78ba483775426d19aac22707bd868b39.ctex"
 metadata={
 "vram_texture": false

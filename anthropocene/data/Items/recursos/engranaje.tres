@@ -1,6 +1,10 @@
 [gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bh0ayd23hoeu3"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://beu76s8nbyv3q" path="res://assets/extras/engranaje.png" id="1_8bnbq"]
+=======
+[ext_resource type="Texture2D" uid="uid://bk2nxxculc5l7" path="res://assets/extras/engranaje.png" id="1_8bnbq"]
+>>>>>>> 45ead31 (Actualizacion de inventario y nuevo item abono)
 [ext_resource type="Script" uid="uid://cayetdds76dc4" path="res://data/Items/item_data.gd" id="1_ty45f"]
 
 [resource]
