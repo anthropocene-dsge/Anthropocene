@@ -111,11 +111,12 @@ texture = ExtResource("2_7gb3w")
 position = Vector2(229, 425)
 
 [node name="Player" parent="." unique_id=1355760735 instance=ExtResource("2_lpnwa")]
-position = Vector2(121, 365)
+position = Vector2(80, 596)
 
 [node name="PortalTransicion" parent="." unique_id=1711492377 instance=ExtResource("3_lpnwa")]
 position = Vector2(1479, 1)
 archivo_siguiente_nivel = "res://scenes/level/zona_turbina.tscn"
+coordenada_X_destino = 134.0
 
 [node name="MuroIzquierdo" type="StaticBody2D" parent="." unique_id=2052382678]
 

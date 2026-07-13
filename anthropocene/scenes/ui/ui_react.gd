@@ -47,7 +47,6 @@ func _process_login(payload: Dictionary) -> void:
 	
 	if es_valido:
 		# Activamos la sesión oficial en la memoria del juego
-		Global.usuario_logueado = username
 		Global.esta_autenticado = true
 		print("[SESSION] Credenciales correctas. Registrado en Global.")
 	else:
@@ -83,14 +82,17 @@ func _process_continue() -> void:
 	print("[IPC ACTION] Continuando partida real... Desplegando mundo.")
 	
 	# No hace falta reescribir los datos de Global, ya se cargaron en _process_get_save_data()
-	# Solo damos margen para la animación y transicionamos.
+	# Solo damos margen para la animación y transicionamos al mapa real que armaste.
 	await get_tree().create_timer(0.4).timeout
-	get_tree().change_scene_to_file("res://scenes/MundoJugable.tscn")
+	get_tree().change_scene_to_file("res://scenes/level/zona_base.tscn")
 
 func _process_new_game() -> void:
 	print("[IPC ACTION] Iniciando nueva partida... Sobreescribiendo sector local.")
 	
-	# Construimos la base de datos de inicio para el colono
+	# 1. Comprobamos si el disco está vacío ANTES de sobreescribir los datos
+	var es_primera_vez = FileStorage.cargar_progreso().is_empty()
+	
+	# Construimos la base de datos de inicio para el usuario
 	var nuevos_datos = {
 		"location": "SECTOR 00 - El COMIENZO... de nuevo.",
 		"date": Time.get_date_string_from_system(),
@@ -104,7 +106,14 @@ func _process_new_game() -> void:
 	Global.datos_partida_actual = nuevos_datos
 	
 	await get_tree().create_timer(0.4).timeout
-	get_tree().change_scene_to_file("res://scenes/IntroJuego.tscn")
+	
+	# 2. Enrutamos dependiendo de si había partida previa o no
+	if es_primera_vez:
+		# Si no hay partida, mandamos a la cinemática de introducción
+		get_tree().change_scene_to_file("res://scenes/level/cinematica.tscn") 
+	else:
+		# Si ya existía una partida, saltamos la intro y vamos al mapa
+		get_tree().change_scene_to_file("res://scenes/level/zona_base.tscn")
 
 # FUNCIÓN DE SALIDA (PUENTE DE REGRESO DEFINITIVO)
 func _responder_a_react(data_dict: Dictionary) -> void:

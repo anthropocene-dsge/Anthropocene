@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://35rq6a3vckak"]
+
+[ext_resource type="Script" uid="uid://duj2oh3tvc3on" path="res://scenes/entities/Estructuras/item_drop.gd" id="1_eqv5g"]
+[ext_resource type="Texture2D" uid="uid://beu76s8nbyv3q" path="res://assets/extras/engranaje.png" id="2_102sh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ntylx"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kxgx2"]
+radius = 11.401754
+
+[node name="ItemDrop" type="CharacterBody2D" unique_id=1486762720]
+collision_layer = 0
+script = ExtResource("1_eqv5g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=959410096]
+position = Vector2(0, 1)
+scale = Vector2(0.16910823, 0.17458436)
+texture = ExtResource("2_102sh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=965172835]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_ntylx")
+
+[node name="ZonaRecoleccion" type="Area2D" parent="." unique_id=852522259]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaRecoleccion" unique_id=1579093788]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_kxgx2")

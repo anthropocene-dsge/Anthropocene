@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://xvikdq7p7ugy"]
+
+[ext_resource type="Script" uid="uid://bejkb1nmgacd2" path="res://scenes/entities/Estructuras/turbina.gd" id="1_45pru"]
+[ext_resource type="Texture2D" uid="uid://cm5bv3unj8rjf" path="res://assets/molino frames/molino 1.png" id="1_aeqq6"]
+[ext_resource type="Texture2D" uid="uid://bqflxjotseycg" path="res://assets/molino frames/molino 2.png" id="2_45pru"]
+[ext_resource type="PackedScene" uid="uid://caeq67aw32ltw" path="res://scenes/entities/Estructuras/item_drop_abono.tscn" id="2_sx5mm"]
+[ext_resource type="Texture2D" uid="uid://bhl02ydmjsbfg" path="res://assets/molino frames/molino 3.png" id="3_sx5mm"]
+[ext_resource type="Texture2D" uid="uid://dr8e6pdytufe8" path="res://assets/molino frames/molino 4.png" id="4_pqiq7"]
+[ext_resource type="Texture2D" uid="uid://dui5j7t8ntwdk" path="res://assets/molino frames/molino 5.png" id="5_4kuid"]
+[ext_resource type="Texture2D" uid="uid://8pfu53i2iqax" path="res://assets/molino frames/molino 6.png" id="6_ju1wm"]
+[ext_resource type="Texture2D" uid="uid://jighhgtsqdur" path="res://assets/molino frames/molino 7.png" id="7_qq0ul"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ntylx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aeqq6")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aeqq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_45pru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sx5mm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pqiq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4kuid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ju1wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qq0ul")
+}],
+"loop": 1,
+"name": &"wind_high",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aeqq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_45pru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sx5mm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pqiq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4kuid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ju1wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qq0ul")
+}],
+"loop": 1,
+"name": &"wind_low",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ntylx"]
+size = Vector2(173, 406)
+
+[node name="Turbina" type="Area2D" unique_id=1139336998]
+script = ExtResource("1_45pru")
+escena_item_drop = ExtResource("2_sx5mm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=859067101]
+position = Vector2(1, 1)
+scale = Vector2(4.6549296, 6.7985077)
+sprite_frames = SubResource("SpriteFrames_ntylx")
+animation = &"idle"
+frame_progress = 0.6706812
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=917573711]
+position = Vector2(0.5, 27)
+shape = SubResource("RectangleShape2D_ntylx")

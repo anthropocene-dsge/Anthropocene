@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://caeq67aw32ltw"]
+
+[ext_resource type="Script" uid="uid://duj2oh3tvc3on" path="res://scenes/entities/Estructuras/item_drop.gd" id="1_sswee"]
+[ext_resource type="Texture2D" uid="uid://cw6wsqpanrves" path="res://assets/extras/abono.png" id="2_ciaxg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ntylx"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kxgx2"]
+radius = 11.401754
+
+[node name="ItemDrop" type="CharacterBody2D" unique_id=1486762720]
+collision_layer = 0
+script = ExtResource("1_sswee")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=959410096]
+scale = Vector2(0.6038732, 0.62220144)
+texture = ExtResource("2_ciaxg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=965172835]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_ntylx")
+
+[node name="ZonaRecoleccion" type="Area2D" parent="." unique_id=852522259]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaRecoleccion" unique_id=1579093788]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_kxgx2")

@@ -1,14 +1,28 @@
 [gd_scene format=3 uid="uid://d0f400ejbc04n"]
 
 [ext_resource type="Script" uid="uid://dr1y3clod1wht" path="res://scenes/entities/Estructuras/roca.gd" id="1_qntq4"]
+[ext_resource type="PackedScene" uid="uid://35rq6a3vckak" path="res://scenes/entities/Estructuras/item_drop_engranaje.tscn" id="2_cauhi"]
+[ext_resource type="Resource" uid="uid://bh0ayd23hoeu3" path="res://data/Items/recursos/engranaje.tres" id="3_blegg"]
+[ext_resource type="Texture2D" uid="uid://c0getupcq3mo4" path="res://assets/extras/piedra.png" id="3_bnb2p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_li8d4"]
+radius = 54.147945
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ntylx"]
-radius = 72.02777
+radius = 44.04543
 
 [node name="Roca" type="Area2D" unique_id=991292138]
 script = ExtResource("1_qntq4")
+escena_item_drop = ExtResource("2_cauhi")
+datos_material = ExtResource("3_blegg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=934127967]
+shape = SubResource("CircleShape2D_li8d4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=933835063]
+position = Vector2(10, -7.0000005)
+scale = Vector2(2.1056337, 1.7033582)
+texture = ExtResource("3_bnb2p")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=658084524]
 
