@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://35rq6a3vckak"]
 
 [ext_resource type="Script" uid="uid://duj2oh3tvc3on" path="res://scenes/entities/Estructuras/item_drop.gd" id="1_eqv5g"]
-[ext_resource type="Texture2D" uid="uid://beu76s8nbyv3q" path="res://assets/extras/engranaje.png" id="2_102sh"]
+[ext_resource type="Texture2D" uid="uid://b1qd0c7aafn5e" path="res://assets/extras/engranaje.png" id="2_102sh"]
+[ext_resource type="Resource" uid="uid://bh0ayd23hoeu3" path="res://data/Items/recursos/engranaje.tres" id="2_txp6i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ntylx"]
 radius = 9.0
@@ -12,6 +13,7 @@ radius = 11.401754
 [node name="ItemDrop" type="CharacterBody2D" unique_id=1486762720]
 collision_layer = 0
 script = ExtResource("1_eqv5g")
+datos_del_item = ExtResource("2_txp6i")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=959410096]
 position = Vector2(0, 1)

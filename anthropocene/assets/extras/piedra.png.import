@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:anthropocene/assets/extras/piedra.png.import
-uid="uid://c0getupcq3mo4"
+uid="uid://bpolqkne22fiu"
 path="res://.godot/imported/piedra.png-80a1b99459bf171fd113a6aa217694d4.ctex"
-========
-uid="uid://vdhmxxy8vty"
-path="res://.godot/imported/radio 3.png-269f7a424c4f2c2a69bdc836b06cf5ab.ctex"
->>>>>>>> 1773321483a2d600bbd8e77379561b616b244594:anthropocene/assets/antena frames/radio 3.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:anthropocene/assets/extras/piedra.png.import
 source_file="res://assets/extras/piedra.png"
 dest_files=["res://.godot/imported/piedra.png-80a1b99459bf171fd113a6aa217694d4.ctex"]
-========
-source_file="res://assets/antena frames/radio 3.png"
-dest_files=["res://.godot/imported/radio 3.png-269f7a424c4f2c2a69bdc836b06cf5ab.ctex"]
->>>>>>>> 1773321483a2d600bbd8e77379561b616b244594:anthropocene/assets/antena frames/radio 3.png.import
 
 [params]
 

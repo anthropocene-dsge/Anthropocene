@@ -122,7 +122,7 @@ archivo_siguiente_nivel = "res://scenes/level/zona_antena.tscn"
 coordenada_X_destino = 126.0
 
 [node name="Roca" parent="." unique_id=991292138 instance=ExtResource("5_prrs0")]
-position = Vector2(273, 611)
+position = Vector2(258, 609)
 
-[node name="Roca2" parent="." unique_id=1392104375 instance=ExtResource("5_prrs0")]
-position = Vector2(1064, 610)
+[node name="Roca2" parent="." unique_id=479292386 instance=ExtResource("5_prrs0")]
+position = Vector2(1058, 613)

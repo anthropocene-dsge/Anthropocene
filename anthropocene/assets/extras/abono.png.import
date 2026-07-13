@@ -2,40 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-<<<<<<<< HEAD:anthropocene/assets/extras/abono.png.import
-uid="uid://cw6wsqpanrves"
+uid="uid://b3aqherrfmdfn"
 path="res://.godot/imported/abono.png-78ba483775426d19aac22707bd868b39.ctex"
-========
-uid="uid://c0getupcq3mo4"
-path="res://.godot/imported/piedra.png-80a1b99459bf171fd113a6aa217694d4.ctex"
->>>>>>>> 1773321483a2d600bbd8e77379561b616b244594:anthropocene/assets/extras/piedra.png.import
-=======
-<<<<<<< HEAD
-uid="uid://cw6wsqpanrves"
-=======
-uid="uid://dndec7f7mjrec"
->>>>>>> 45ead31 (Actualizacion de inventario y nuevo item abono)
-path="res://.godot/imported/abono.png-78ba483775426d19aac22707bd868b39.ctex"
->>>>>>> 1773321483a2d600bbd8e77379561b616b244594
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD
-<<<<<<<< HEAD:anthropocene/assets/extras/abono.png.import
 source_file="res://assets/extras/abono.png"
 dest_files=["res://.godot/imported/abono.png-78ba483775426d19aac22707bd868b39.ctex"]
-========
-source_file="res://assets/extras/piedra.png"
-dest_files=["res://.godot/imported/piedra.png-80a1b99459bf171fd113a6aa217694d4.ctex"]
->>>>>>>> 1773321483a2d600bbd8e77379561b616b244594:anthropocene/assets/extras/piedra.png.import
-=======
-source_file="res://assets/extras/abono.png"
-dest_files=["res://.godot/imported/abono.png-78ba483775426d19aac22707bd868b39.ctex"]
->>>>>>> 1773321483a2d600bbd8e77379561b616b244594
 
 [params]
 

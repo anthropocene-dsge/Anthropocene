@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://caeq67aw32ltw"]
 
 [ext_resource type="Script" uid="uid://duj2oh3tvc3on" path="res://scenes/entities/Estructuras/item_drop.gd" id="1_sswee"]
-[ext_resource type="Texture2D" uid="uid://cw6wsqpanrves" path="res://assets/extras/abono.png" id="2_ciaxg"]
+[ext_resource type="Texture2D" path="res://assets/extras/abono.png" id="2_ciaxg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ntylx"]
 radius = 9.0
