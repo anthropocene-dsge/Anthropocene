@@ -1,10 +1,22 @@
+<<<<<<< HEAD
 @tool # <-- Esto permite que el script ejecute código dentro del editor de Godot
+=======
+@tool # Permite que el script ejecute código dentro del editor de Godot
+>>>>>>> 1773321483a2d600bbd8e77379561b616b244594
 class_name ListaItemsMaster
 extends Resource
 
 @export var lista_de_items: Array[ItemData] = []
 
+<<<<<<< HEAD
 # Creamos una variable booleana que actúa como un botón en el Inspector
+=======
+<<<<<<< HEAD
+# Creamos una variable booleana que actúa como un botón en el Inspector
+=======
+# Variable booleana que actúa como un botón en el Inspector
+>>>>>>> 45ead31 (Actualizacion de inventario y nuevo item abono)
+>>>>>>> 1773321483a2d600bbd8e77379561b616b244594
 @export var ACTUALIZAR_LISTA_AUTOMATICAMENTE: bool = false:
 	set(valor):
 		if valor == true:
@@ -29,5 +41,13 @@ func _actualizar_lista_desde_carpeta() -> void:
 		
 		lista_de_items = nuevos_items
 		print("¡Lista actualizada! Se encontraron ", lista_de_items.size(), " ítems.")
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+		# Fuerza al Inspector a refrescarse visualmente para ver los cambios
+		notify_property_list_changed()
+>>>>>>> 45ead31 (Actualizacion de inventario y nuevo item abono)
+>>>>>>> 1773321483a2d600bbd8e77379561b616b244594
 	else:
 		print("Error: No se pudo abrir la carpeta en ", ruta_recursos)

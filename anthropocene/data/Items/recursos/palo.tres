@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dg3gfh65yp1vh"]
 
+[ext_resource type="Texture2D" uid="uid://cylds0cxvj1tx" path="res://assets/extras/palo.png" id="1_dtg03"]
 [ext_resource type="Script" uid="uid://cayetdds76dc4" path="res://data/Items/item_data.gd" id="1_lpyte"]
 
 [resource]
@@ -7,5 +8,6 @@ script = ExtResource("1_lpyte")
 id = "palo01"
 nombre = "palo"
 descripcion = "Esto es un palo"
+icono = ExtResource("1_dtg03")
 tipo = 1
 valor_oro = 2
