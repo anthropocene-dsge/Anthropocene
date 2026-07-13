@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dmp1fqa0svsqi"]
+
+[ext_resource type="Texture2D" uid="uid://s0k5k7tyjwqo" path="res://assets/extras/vida_verde.png" id="1_wplbc"]
+[ext_resource type="Texture2D" uid="uid://t7tsgj674bwj" path="res://assets/extras/rad_verde.png" id="2_wplbc"]
+
+[node name="HudJugador" type="Control" unique_id=161666391]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=2126687776]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -704.0
+offset_top = -11.5
+offset_right = 704.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Presiona la tecla [E] para interactuar"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2039849061]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1545298770]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1504944290]
+layout_mode = 2
+
+[node name="BarraVida" type="TextureProgressBar" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1866555109]
+custom_minimum_size = Vector2(300, 90)
+layout_mode = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("1_wplbc")
+
+[node name="BarraRadiacion" type="TextureProgressBar" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=574519880]
+custom_minimum_size = Vector2(200, 90)
+layout_mode = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("2_wplbc")
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" unique_id=21940893]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=900283631]
+layout_mode = 2
